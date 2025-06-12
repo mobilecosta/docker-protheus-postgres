@@ -1,0 +1,86 @@
+services:
+    db:
+        image: docker.io/rodrigomicrosiga/postgres-dev-protheus:16.9
+        container_name: postgresql
+        user: root
+        ports:
+            - "5432:5432"
+        env_file:
+          - .env
+        volumes:
+            - /media/rodrigo/dados/volume/postgres/data:/var/lib/postgresql/data
+        networks:
+            - protheus
+        restart: always
+    license:
+        image: docker.io/rodrigomicrosiga/license-dev-protheus:3.7.0
+        container_name: license-server
+        ports:
+            - "8020:8020"
+        devices:
+            - "/dev/mem:/dev/mem"
+        cap_add:
+            - sys_rawio
+        ulimits:
+            core:
+                soft: -1
+                hard: -1
+            nofile:
+                soft: 65536
+                hard: 65536
+            stack:
+                soft: 1048576
+                hard: 1048576
+        networks:
+            - protheus
+    dbaccess:
+        image: docker.io/rodrigomicrosiga/dbaccess-dev-protheus:24.1.0.2
+        container_name: dbaccess
+        ports:
+            - "7890:7890"
+        env_file:
+          - .env
+        ulimits:
+            core:
+                soft: -1
+                hard: -1
+            nofile:
+                soft: 65535
+                hard: 65535
+            stack:
+                soft: 1048576
+                hard: 1048576
+        networks:
+            - protheus
+        depends_on:
+            - db
+            - license
+    protheus:
+        image: docker.io/rodrigomicrosiga/appserver-dev-protheus:20.3.2.23
+        container_name: protheus
+        ports:
+            - "2240:2240"
+            - "8080:8080"
+            - "9995:9995"
+        environment:
+            - ENV_DB=POSTGRES
+        devices:
+            - "/dev/mem:/dev/mem"
+        cap_add:
+            - sys_rawio
+        ulimits:
+            core:
+                soft: -1
+                hard: -1
+            nofile:
+                soft: 65536
+                hard: 65536
+            stack:
+                soft: 1048576
+                hard: 1048576
+        networks:
+            - protheus
+        depends_on:
+            - dbaccess
+networks:
+    protheus:
