@@ -60,8 +60,6 @@ services:
         container_name: protheus
         ports:
             - "2240:2240"
-            - "8080:8080"
-            - "9995:9995"
         environment:
             - ENV_DB=POSTGRES
         devices:
