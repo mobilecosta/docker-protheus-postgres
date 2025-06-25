@@ -65,16 +65,20 @@ Nesse momento o ambiente estará disponível para uso.
 ⚙️ dbAccess 24.1.0
 
 O acesso pode ser realizado via dbmonitor (qt). 
+
 ![acesso-dbaccess](https://github.com/user-attachments/assets/b2b0bc6e-8574-4f3a-a77c-83f3df55e968)
 
 Após acessar a interface poderá realizar a validação de comnicação com o banco utilizando como base os dados existentes no arquivo ".env" que previamente está padronizado como "protheus" (DB/USER/PWD).
+
 ![valida-conexao-postgres](https://github.com/user-attachments/assets/6d60bb4b-8e89-4ae5-88ad-b368fb1c09fa)
 
 E também via tlppCore (GUI) através da URL http://127.0.0.1:32033/api conforme abaixo:
+
 ![tlpp-core-gui](https://github.com/user-attachments/assets/d338670f-f5d3-4b76-8752-6172429c084a)
 
 IMPORTANTE:
 O DBACCESS está utilizando o modo "ConnectionMode=2".
+
 ![connection-mode-postgres](https://github.com/user-attachments/assets/c2ef5434-0961-4fda-a7e6-0c8f6929d13f)
 
 
@@ -85,19 +89,29 @@ O acesso poderá ser realizado via smartclient QT (desktop) ou WebApp.
 ⚙️ Release 12.1.2410
 
 O acesso deverá ser realizado via WebApp/Browser através da URL http://127.0.0.1:1240/webapp 
+
 ![acesso-via-browser-onca-preta](https://github.com/user-attachments/assets/86f1b1c9-e163-46bf-9bc8-067518f94db2)
 
 E na sequencia será solicitada a ação em relação ao WebAgent:
+
 ![permissao-web-agent](https://github.com/user-attachments/assets/d0e24ee1-6df7-4341-98b7-bdd2e4f67a19)
 
 IMPORTANTE:
 Caso o Web-Agent ainda não esteja instalado será possível instalar a partir da inicialização do sistema.
 
 Defina o tipo de empresa que deseja criar:
+
 ![criacao-de-empresas](https://github.com/user-attachments/assets/1ee8431e-7efb-4a01-bfad-3a75e9034c6d)
 
 Defina a localização do ambiente:
+
 ![localizacao](https://github.com/user-attachments/assets/24bad27b-0bc8-4d0e-8ed3-a264348be446)
+
+Inicializando o ambiente:
+
+![inicializando-sistema-onca-preta](https://github.com/user-attachments/assets/d08c2ad0-1e34-43a6-adff-6c46ae08cbf5)
+
+
 
 
 
