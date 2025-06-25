@@ -42,3 +42,45 @@ https://hub.docker.com/u/rodrigomicrosiga
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)
 ![Postgres](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+# Funcionalidades:
+
+A partir da execução do arquivo docker-compose.yaml, serão criados ambientes 12.1.2310 ou 12.1.2410.
+
+🖥️ Exemplo 🖥️
+
+Após clonar o projeto, deverá escolher qual ambiente deseja montar e de acordo com a sua escolha, executará a instrução conforme imagem abaixo:
+![docker-compose-up-d-postgres](https://github.com/user-attachments/assets/0c24c914-2f1d-4537-80e4-4bd5dc8e291d)
+
+Nesse projeto decidi realizar o uso do "healthcheck" para o PostGres e com isso é possível verificar a saúde do container através do "docker ps". Observem a informação de "healthy" conforme a imagem abaixo:
+![docker-ps-postgres-healthy](https://github.com/user-attachments/assets/c788a7d9-003f-40c8-b37e-6a69679c99ca)
+
+Se desejar, também pode verificar via Docker Desktop:
+![docker-desktop-postgres](https://github.com/user-attachments/assets/d6180334-bb30-49f8-89e1-eaf9f9b9401c)
+
+Nesse momento o ambiente estará disponível para uso.
+
+# Demonstração da Aplicação:
+
+⚙️ dbAccess 24.1.0
+
+O acesso pode ser realizado via dbmonitor (qt). 
+![acesso-dbaccess](https://github.com/user-attachments/assets/b2b0bc6e-8574-4f3a-a77c-83f3df55e968)
+
+Após acessar a interface poderá realizar a validação de comnicação com o banco utilizando como base os dados existentes no arquivo ".env" que previamente está padronizado como "protheus" (DB/USER/PWD).
+![valida-conexao-postgres](https://github.com/user-attachments/assets/6d60bb4b-8e89-4ae5-88ad-b368fb1c09fa)
+
+E também via tlppCore (GUI) através da URL http://127.0.0.1:32033/api conforme abaixo:
+![tlpp-core-gui](https://github.com/user-attachments/assets/d338670f-f5d3-4b76-8752-6172429c084a)
+
+
+
+
+⚙️ Release 12.1.2310 
+
+O acesso poderá ser realizado via smartclient QT (desktop) ou WebApp.
+
+⚙️ Release 12.1.2410
+
+O acesso deverá ser realizado via WebApp/Browser. Na sequencia será solicitada a ação em relação ao WebAgent:
+
