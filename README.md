@@ -89,6 +89,9 @@ O DBACCESS está utilizando o modo "ConnectionMode=2".
 
 O acesso poderá ser realizado via smartclient QT (desktop) ou WebApp.
 
+![smartclient-ini](https://github.com/user-attachments/assets/91fdc8f9-0575-4d33-907a-fdfe3fc24c36)
+
+
 ⚙️ Release 12.1.2410
 
 O acesso deverá ser realizado via WebApp/Browser através da URL http://127.0.0.1:1240/webapp 
