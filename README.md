@@ -209,6 +209,13 @@ Lembrando que o volume poderá ser criado/definido de 2 formas:
 
 O nome ou caminho do volume obrigatoriamente deverão ser mencionados no arquivo docker-compose.yaml.
 
+Verificando o agrupamento de caracteres no POSTGRES:
+
+Através da instrução abaixo é possível avaliar o retorno para garantir que tudo está em ordem.
+
+![sql-postgres](https://github.com/user-attachments/assets/e6a2670b-30b1-4477-bb2b-0dd3e84d14c3)
+
+
 # 🐙🐋 O que é o Docker Compose 🐙🐋
 
 É um arquivo, cujo objetivo é simplificar a execução, organização e a comunicação de diversas aplicações.
