@@ -89,6 +89,9 @@ O DBACCESS está utilizando o modo "ConnectionMode=2".
 
 O acesso poderá ser realizado via smartclient QT (desktop) ou WebApp.
 
+![smartclient-ini](https://github.com/user-attachments/assets/91fdc8f9-0575-4d33-907a-fdfe3fc24c36)
+
+
 ⚙️ Release 12.1.2410
 
 O acesso deverá ser realizado via WebApp/Browser através da URL http://127.0.0.1:1240/webapp 
@@ -142,10 +145,10 @@ Ambiente disponível para uso:
 - Porta WebApp 2240
 - WebMonitor Habilitado
 - APP_MONITOR Habilitado
-- 25-05-27-LIB_LABEL_19052025_P12_HARPIA
+- 25-06-27-LIB_LABEL_30062025_P12_HARPIA
 - 25-05-19-CENTRAL_DE_ATUALIZACOES_V2_4_0
 - 25-05-16-P12_APPSERVER_BUILD-20.3.2.23_LINUX_X64
-- 25-05-27-SMARTLINK-2.6.2_HARPIA
+- 25-06-27-SMARTLINK-2.6.3_HARPIA
 - 25-05-14-P12_SMARTCLIENT_WEBAPP_9.2.0_LINUX_X64
 
 ⚙️ Release 12.1.2410
@@ -154,10 +157,10 @@ Ambiente disponível para uso:
 - WebMonitor Habilitado
 - APP_MONITOR Habilitado
 - WebAgent Habilitado
-- 25-05-27-LIB_LABEL_19052025_P12_ONCA
+- 25-06-27-LIB_LABEL_30062025_P12_ONCA
 - 25-05-19-CENTRAL_DE_ATUALIZACOES_V2_4_0
 - 25-03-28-P12_APPSERVER_BUILD-24.3.0.5_LINUX_X64
-- 25-05-27-SMARTLINK-2.6.2_ONCA
+- 25-06-27-SMARTLINK-2.6.3_ONCA
 - 25-05-19-P12_SMARTCLIENT_WEBAPP_10.1.0_LINUX_X64
 - 25-05-14-P12_SMARTCLIENT_WEB-AGENT_1.0.17
 
@@ -208,6 +211,13 @@ Lembrando que o volume poderá ser criado/definido de 2 formas:
 - Através do Docker Desktop - Resources/File Sharing
 
 O nome ou caminho do volume obrigatoriamente deverão ser mencionados no arquivo docker-compose.yaml.
+
+Verificando o agrupamento de caracteres no POSTGRES:
+
+Através da instrução abaixo é possível avaliar o retorno para garantir que tudo está em ordem.
+
+![sql-postgres](https://github.com/user-attachments/assets/e6a2670b-30b1-4477-bb2b-0dd3e84d14c3)
+
 
 # 🐙🐋 O que é o Docker Compose 🐙🐋
 
