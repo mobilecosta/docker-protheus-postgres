@@ -8,7 +8,7 @@ services:
         env_file:
           - .env
         volumes:
-            - /media/rodrigo/dados/volume/postgres/data:/var/lib/postgresql/data
+            - /usr/ec2-user/dados/volume/postgres/data:/var/lib/postgresql/data
         healthcheck:
             test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
             interval: 10s
@@ -66,6 +66,7 @@ services:
         container_name: protheus
         ports:
             - "1240:1240"
+            - "8080:8080"
             - "32033:32033"
         environment:
             - ENV_DB=POSTGRES
