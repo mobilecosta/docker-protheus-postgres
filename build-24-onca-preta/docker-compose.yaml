@@ -23,8 +23,6 @@ services:
         container_name: license-server
         ports:
             - "8020:8020"
-        devices:
-            - "/dev/mem:/dev/mem"
         cap_add:
             - sys_rawio
         ulimits:
@@ -70,8 +68,6 @@ services:
             - "32033:32033"
         environment:
             - ENV_DB=POSTGRES
-        devices:
-            - "/dev/mem:/dev/mem"
         cap_add:
             - sys_rawio
         ulimits:
