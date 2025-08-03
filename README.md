@@ -287,40 +287,55 @@ Afinal a ideia é compartilhar conhecimento com todos! 👊🏻💥
 ## 1 - Inclusão Rest
 
 
-MPP=
- 
 [ONSTART]
+
 Jobs=HTTPJOB
+
 Refreshrate=3600
 
 [HTTPV11]
+
 Enable=1
+
 AddressFamily=1
+
 Sockets=HTTPREST
+
 TimeOut=3600
 
+
 [HTTPREST] 
+
 Port=8080
+
 IPsBind=
+
 URIs=HTTPURI
+
 Security=1
+
 MaxQueue=10
+
 ;LogRequest=1
+
 ;LogResponse=1
 
 [HTTPURI]
+
 URL=/rest
+
 PrepareIn=99
+
 Instances=1,2,1,1
+
 CORSEnable=0
+
 AllowOrigin=*
 
 [HTTPJOB]
+
 MAIN=HTTP_START
+
 ENVIRONMENT=PROTHEUS
-
-
-
-
 
 
