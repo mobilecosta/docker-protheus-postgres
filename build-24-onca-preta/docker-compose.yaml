@@ -62,7 +62,7 @@ services:
             - db
             - license
     protheus:
-        image: docker.io/rodrigomicrosiga/appserver-dev-protheus:24.3.0.5
+        image: docker.io/rodrigomicrosiga/appserver-dev-protheus:24.3.0.11
         container_name: protheus
         ports:
             - "1240:1240"
