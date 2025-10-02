@@ -38,7 +38,7 @@ services:
         networks:
             - protheus
     dbaccess:
-        image: docker.io/rodrigomicrosiga/dbaccess-dev-protheus:24.1.0.6
+        image: docker.io/rodrigomicrosiga/dbaccess-dev-protheus:24.1.0.7
         container_name: dbaccess
         ports:
             - "7890:7890"
@@ -60,7 +60,7 @@ services:
             - db
             - license
     protheus:
-        image: docker.io/rodrigomicrosiga/appserver-dev-protheus:24.3.0.5
+        image: docker.io/rodrigomicrosiga/appserver-dev-protheus:24.3.0.11
         container_name: protheus
         ports:
             - "1240:1240"
