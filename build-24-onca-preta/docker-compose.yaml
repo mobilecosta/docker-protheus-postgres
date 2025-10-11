@@ -80,6 +80,8 @@ services:
             stack:
                 soft: 1048576
                 hard: 1048576
+        volumes:   
+             - ./appserver.ini:/totvs/protheus/tec/appserver/appserver.ini:rw
         networks:
             - protheus
         depends_on:
