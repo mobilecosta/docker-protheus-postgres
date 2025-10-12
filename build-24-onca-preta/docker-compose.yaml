@@ -82,6 +82,7 @@ services:
                 hard: 1048576
         volumes:   
              - ./appserver.ini:/totvs/protheus/tec/appserver/appserver.ini:rw
+             - ./custom.rpo:/totvs/protheus/apo/custom.rpo:rw
         networks:
             - protheus
         depends_on:
