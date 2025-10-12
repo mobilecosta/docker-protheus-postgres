@@ -8,7 +8,7 @@ services:
         env_file:
           - .env
         volumes:
-            - /media/rodrigo/dados/volume/postgres/data:/var/lib/postgresql/data
+            - /usr/ec2-user/dados/volume/postgres/data:/var/lib/postgresql/data
         healthcheck:
             test: ["CMD-SHELL", "pg_isready -U protheus -d protheus"]
             interval: 10s
